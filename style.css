@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f6f8;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    background-color: #ffffff;
+    padding: 0 5%;
+    padding-block: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+}
+.logo-context{
+    display: flex;
+    justify-content: flex-end;
+}
+.logo-context h4 {
+    font-weight: 300;
+}
+.articles{
+    padding: 0 5%;
+}
+.title-post {
+font-size: 45px;
+}
+.heading-image img{
+    display: block;
+    margin: 0 auto;
+}
+
+.whole{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    margin-top: 50px;
+}
+.software{
+    width: 95%;
+}
+
+.ads{
+    top: 50px;
+    position: sticky;
+    height: 650px;
+    width: 100%;
+    transition: 0.4s ease;
+}
+.ads img {
+    /* position: skicky; */
+    top: 60px;
+    right: 80px;
+    z-index: -80;
+    /* display: none; */
+    /* Add this line to hide the image */
+}
+
+.whole:hover .ads img {
+    display: block;
+    /* Show the image when hovering over the "whole" class */
+}
+
+.show-ads {
+    /* opacity: 1; */
+    top: 50px;
+}
+footer {
+    background-color: #ffffff;
+    padding-block: 50px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+    width: 100%;
+    margin-top: 150px;
+}
+
+
+
+@media only screen and (max-width: 1024px) {
+    header{
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .title-post{
+        font-size: 30px;
+    }
+    .articles img{
+        width: 100%;
+    }
+    .whole{
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+
+    }
+    video{
+        width: 100%;
+    }
+}
